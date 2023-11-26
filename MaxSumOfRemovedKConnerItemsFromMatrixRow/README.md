@@ -10,7 +10,7 @@ Paramter1 : M X N matrix, example: [[4, 2, 1, 7], [5, 3, 8, 9], [6, 1, 0, 2]], 3
 |5|3|8|9|
 |6|1|0|2|
 
-Paramter2 is a non-nagitive number k, where 0 < k <= M x N
+Paramter2 is a non-nagitive number k, where 0 <= k <= M x N
 Here is an exmaple k = 3;
 
 What you need to do is, do k times operations.
@@ -31,7 +31,7 @@ matrix[i][j] >= 0
 
 and
 
-0 < k <= M x N
+0 <= k <= M x N
 
 # Example
 matrix = [[4, 2, 1, 7], [5, 3, 8, 9], [6, 1, 0, 2]]
