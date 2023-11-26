@@ -26,6 +26,9 @@ Challenge/test.py
 # Javacript test main
 Challenge/test.js
 
+# CPP solution header
+Challenge/solution.hpp
+
 # CPP solution TODO
 Challenge/solution.cpp
 
