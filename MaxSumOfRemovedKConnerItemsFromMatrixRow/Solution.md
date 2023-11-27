@@ -75,7 +75,7 @@ We will have the new operate_max_sum_matrix: [[7, 11, 13], [9, 17, 22], [6, 8, 9
 
 While we have the matrix operate_max_sum_matrix, we can go to step 2
 
-# Key second, solve a grouping 0-1 Knapsack problem
+# Second Key, solve a grouping 0-1 Knapsack problem
 
 We know that for the operate_max_sum_matrix[i][j]
 i + 1 means the operation
