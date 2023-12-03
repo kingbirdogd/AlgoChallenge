@@ -7,11 +7,11 @@ For Row [4, 2, 1, 7] as example:
 
 While N == 1, means remove 1 items from this row, the best answer is 7
 
-While N == 2, we must remove 2 items from its beginning or end. So find the max sum(removes of 2) is same as find the min sum of subarray([4, 2, 1, 7], arr.lengh - N)
-arr.lengh - N = 2. That means we must found the min sum of subarray(4, 2, 1, 7], arr.lengh - N), and the answer is 
-sum(array) - sum of subarray(4, 2, 1, 7], arr.lengh - N)
+While N == 2, we must remove 2 items from its beginning or end. So find the max sum(removes of 2) is same as find the min sum of subarray([4, 2, 1, 7], arr.length - N)
+arr.length - N = 2. That means we must found the min sum of subarray(4, 2, 1, 7], arr.length - N), and the answer is 
+sum(array) - sum of subarray(4, 2, 1, 7], arr.length - N)
 
-whe have sub array lenth 2 is:
+when have sub array length 2 is:
 |4|2|
 |:-:|:-:|
 
@@ -27,7 +27,7 @@ sum = 14
 sum of ([2,1]) is 3
 so the answer is 11.
 
-Here is the python algo, give you a row, give you an operations count, calcualte the max removed sum:
+Here is the python algo, give you a row, give you an operations count, calculate the max removed sum:
 ```
 def MaxSelectedKCornerItemItemFromArray(v, remove_item):
     windows_size = len(v) - remove_item
@@ -54,7 +54,7 @@ Because if the single row operations can't more than the total_operations.
 
 So for each rows, can get an new array, operate_max_sum_row. operate_max_sum_row[i] means the max removed sum of i + 1 items.
 
-So for the whole matrix, we can calcualte a new matrix operate_max_sum_matrix, 
+So for the whole matrix, we can calculate a new matrix operate_max_sum_matrix, 
 The operate_max_sum_matrix[i][j] mean : the max removed item sum of row[i], do j + 1 operations
 
 So for the matrix 
@@ -86,7 +86,7 @@ So the operate_max_sum_matrix[i][j] is a items.
 The items weight is: i + 1
 The items prices is: operate_max_sum_matrix[i][j]
 
-And we knows that the items divde to rows group, in each group/rows, we can just select one items.
+And we knows that the items divide to rows group, in each group/rows, we can just select one items.
 
 So this became a  grouping 0-1 Knapsack problem
 
@@ -102,13 +102,13 @@ so let solve this Knapsack problem in python
 ```
     dp = [0] * (k + 1) #k = 3
     for i in range(0, len(operate_max_sum_matrix)):
-        for bag_weigth_reverse_idx in range(0,k):
-            bag_weigth = k - bag_weigth_reverse_idx
-            for weigth_idx in range(0,max_select_item_each_row):
-                item_weight = weigth_idx + 1
-                item_value = operate_max_sum_matrix[i][weigth_idx]
-                if bag_weigth >= item_weight:
-                    dp[bag_weigth] = max(dp[bag_weigth], dp[bag_weigth - item_weight] + item_value)
+        for bag_weight_reverse_idx in range(0,k):
+            bag_weight = k - bag_weight_reverse_idx
+            for weight_idx in range(0,max_select_item_each_row):
+                item_weight = weight_idx + 1
+                item_value = operate_max_sum_matrix[i][weight_idx]
+                if bag_weight >= item_weight:
+                    dp[bag_weight] = max(dp[bag_weight], dp[bag_weight - item_weight] + item_value)
 ```
 
 
