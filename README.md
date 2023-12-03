@@ -14,7 +14,7 @@ sudo apt install libgtest-dev
 
 ## Folder Structure
 
-# Question Decription
+# Question Description
 Challenge/README.md
 
 # CPP test executable
@@ -23,7 +23,7 @@ Challenge/test.cpp
 # python test main
 Challenge/test.py
 
-# Javacript test main
+# JavaScript test main
 Challenge/test.js
 
 # CPP solution header
@@ -35,7 +35,7 @@ Challenge/solution.cpp
 # python solution TODO
 Challenge/solution.py
 
-# Javacript solution TODO
+# JavaScript solution TODO
 Challenge/solution.js
 
 # CPP test shell
@@ -44,7 +44,7 @@ Challenge/runCppTest.sh
 # Python test shell
 Challenge/runPythonTest.sh
 
-# Javascript test shell
+# JavaScript test shell
 Challenge/runJsTest.sh
 
 # CPP Make file 

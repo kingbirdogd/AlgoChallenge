@@ -2,23 +2,23 @@
 Remove k first or last items from any row of a M x N matrix, to find out the max sum of all removed items
 
 # Problem Details
-Wrtite a function MaxSumOfRemovedKConnerItemsFromMatrixRow with 2 Paramters
-Paramter1 : M X N matrix, example: [[4, 2, 1, 7], [5, 3, 8, 9], [6, 1, 0, 2]], 3 Rows 4 Column table M = 3, N = 4
+Write a function MaxSumOfRemovedKConnerItemsFromMatrixRow with 2 parameters
+Parameter1 : M X N matrix, example: [[4, 2, 1, 7], [5, 3, 8, 9], [6, 1, 0, 2]], 3 Rows 4 Column table M = 3, N = 4
 
 |4|2|1|7|
 |:-:|:-:|:-:|:-:|
 |5|3|8|9|
 |6|1|0|2|
 
-Paramter2 is a non-nagitive number k, where 0 <= k <= M x N
-Here is an exmaple k = 3;
+Parameter2 is a non-negative number k, where 0 <= k <= M x N
+Here is an example k = 3;
 
 What you need to do is, do k times operations.
 For each operation, you need to do:
 
 1. select any i, which 0 <= i < M, select a row in matrix which is row = matrix[i]
 2. remove the first or the last item from the row you select. After removed, you can't remove this item again this time. The first or the last item for this row should be the adjacent item of the removed item
-3. acculate the removed item to the sum
+3. accumulate the removed item to the sum
 
 The Function task is to find a best removed operations scenarios to make to sum to the max
 
